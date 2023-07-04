@@ -6,6 +6,10 @@ Are you curious about what's the picture for?
 
 This amazing picture is from the UMAP projection of the 21-nt sequences of **999,240** human A-to-I RNA editing sites (non-Alu repeats) in REDIportal! Each pixel here represents a set of similar sequences, and brightness of the pixels represent the density of sites. With this picture, we can intuitively learn what kinds of k-mers (21-mers here) are included and enriched in such huge amount of RNA editing events. This is never been done before.
 
+Last update: July 4, 2023
+
+For newest versions, see https://github.com/jhfoxliu/iMVP
+
 ## Introduction
 
 **interactive epitranscriptomic Motif Visualization and Sub-type Partitioning (iMVP)** is a strategy inspired by the commonly used single cell analysis strategy of dimensional reduction followed by clustering. Different from the digital counts in single cell analysis, we here use the RNA sequence (and/or structure) as an input. Here, we firstly transform RNA sequences into a one-hot format; then these transformed sequences were projected to a 2D plane with UMAP, which can not only gather the similar sequences together, but also maintain the relationships between each other (compared with t-SNE); the dimensional reduced data were further clustered by density, with the super-efficient algorithm HDBSCAN, to highlight the enriched sequences.
